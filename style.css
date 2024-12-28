@@ -1,144 +1,100 @@
-/* Basic reset and styling */
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set up basic font family and background */
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f4f4f9;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Header Styling */
+/* Header Styles */
 header {
-    background-color: #0047AB; /* Deep Blue */
+    background-color: #4CAF50; /* Green */
     color: white;
-    padding: 15px 20px;
     text-align: center;
-    font-size: 2rem;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
 }
 
 header h1 {
-    font-family: 'Helvetica', sans-serif;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-/* Main Content Area */
+/* Main Section Styles */
 main {
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Section Styling */
+/* Section Styles */
 .section {
-    margin-bottom: 40px;
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #0056b3; /* Blue */
-    font-size: 1.75rem;
-    border-bottom: 2px solid #0056b3;
-    padding-bottom: 8px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
 }
 
 h3 {
-    color: #333;
     font-size: 1.5rem;
-    margin-top: 20px; 
-}
-
-p {
-    color: #555;
-    line-height: 1.6;
-}
-
-ul {
-    margin: 10px 0;
-    padding-left: 20px;
-}
-
-ul li {
-    margin: 10px 0;
-    font-size: 1.1rem;
-}
-
-ul li b {
-    color: #FF6347; /* Tomato */
-}
-
-ul li::before {
-    content: "🔍"; /* Add a search emoji */
-    margin-right: 10px;
-}
-
-ul li:nth-child(odd) {
-    background-color: #F0F8FF; /* Alice Blue */
-    border-left: 5px solid #0047AB;
-    padding-left: 10px;
-}
-
-ul li:nth-child(even) {
-    background-color: #FFFACD; /* Lemon Chiffon */
-    border-left: 5px solid #FF6347;
-    padding-left: 10px;
-}
-
-code {
-    background-color: #eee;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
     color: #333;
-}
-
-blockquote {
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #E6F7FF;
-    border-left: 5px solid #0056b3;
-    font-style: italic;
-    color: #333;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    font-size: 1rem;
-}
-
-footer p {
-    font-size: 1.2rem;
-}
-
-/* Emojis and Icons */
-footer::before {
-    content: "🔧📚💻";
-    display: block;
-    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-/* Responsive Design */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+
+/* Style for bold items */
+b {
+    font-weight: bold;
+}
+
+/* Highlight specific sections with color */
+.section:nth-child(even) {
+    background-color: #e8f5e9; /* Light Green */
+}
+
+.section:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Add some spacing to paragraphs */
+p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Responsive Text for small screens */
 @media screen and (max-width: 768px) {
-    main {
-        padding: 15px;
+    header h1 {
+        font-size: 2rem;
     }
 
-    h1 {
-        font-size: 1.5rem;
+    .section {
+        padding: 15px;
     }
 
     h2 {
@@ -149,7 +105,36 @@ footer::before {
         font-size: 1.3rem;
     }
 
-    footer p {
+    p, ul li {
         font-size: 1rem;
     }
+}
+
+/* Styling links (if any) */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add emojis for fun */
+ul li::before {
+    content: "🔹 ";
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+h2::after {
+    content: "🌿";
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+h3::after {
+    content: "💡";
+    margin-left: 10px;
+    font-size: 1.3rem;
 }

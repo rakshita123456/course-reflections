@@ -6,28 +6,35 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 /* Header Styling */
 header {
-    background-color: #333;
+    background-color: #0047AB; /* Deep Blue */
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: center;
+    font-size: 2rem;
+}
+
+header h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
 }
 
 /* Main Content Area */
 main {
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 30px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Section Styling */
@@ -35,8 +42,18 @@ main {
     margin-bottom: 40px;
 }
 
-h2, h3 {
+h2 {
+    color: #0056b3; /* Blue */
+    font-size: 1.75rem;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
     color: #333;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 
 p {
@@ -50,14 +67,89 @@ ul {
 }
 
 ul li {
-    margin: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+ul li b {
+    color: #FF6347; /* Tomato */
+}
+
+ul li::before {
+    content: "🔍"; /* Add a search emoji */
+    margin-right: 10px;
+}
+
+ul li:nth-child(odd) {
+    background-color: #F0F8FF; /* Alice Blue */
+    border-left: 5px solid #0047AB;
+    padding-left: 10px;
+}
+
+ul li:nth-child(even) {
+    background-color: #FFFACD; /* Lemon Chiffon */
+    border-left: 5px solid #FF6347;
+    padding-left: 10px;
+}
+
+code {
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #E6F7FF;
+    border-left: 5px solid #0056b3;
+    font-style: italic;
+    color: #333;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
     margin-top: 40px;
-    padding: 10px;
+    padding: 20px;
     background-color: #333;
     color: white;
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+/* Emojis and Icons */
+footer::before {
+    content: "🔧📚💻";
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
 }

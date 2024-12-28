@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Concepts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Understanding Algorithms: Concepts and Applications</h1>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>1. Patterns in Nature</h2>
+            <p>The relationship between algorithms and patterns in nature is a testament to how natural phenomena have inspired computational innovation. For example:</p>
+            <ul>
+                <li>The collective movement of animal herds, which align and organize themselves according to local interactions, reflects the principles of merge sort, where smaller groups are sorted and combined into a larger ordered structure.</li>
+                <li>Predatory hunting demonstrates a binary search approach, focusing efforts to quickly locate prey.</li>
+                <li>The design of neural networks is inspired by the human brain, a natural system of interconnected neurons capable of learning and adaptation.</li>
+            </ul>
+            <p>This interplay not only advances technology but also deepens our understanding of the processes that govern the world around us.</p>
+        </section>
+
+        <section class="section">
+            <h2>2. Space and Time Efficiency and Orders of Growth</h2>
+            <h3>Space Efficiency</h3>
+            <p>Space efficiency refers to how effectively an algorithm uses memory during execution. It is a critical aspect of algorithm design, particularly for systems with limited resources. Space efficiency is usually measured by the space complexity, which evaluates the amount of memory required relative to the size of the input.</p>
+            
+            <h3>Time Efficiency</h3>
+            <p>Time efficiency refers to how quickly an algorithm completes its task as a function of the input size. It is a crucial aspect of algorithm performance, especially for large datasets or real-time systems. Time efficiency is typically measured using time complexity.</p>
+
+            <h3>Orders of Growth</h3>
+            <ul>
+                <li><b>O(1)</b>: Constant time (e.g., accessing an array element).</li>
+                <li><b>O(log n)</b>: Logarithmic time (e.g., binary search).</li>
+                <li><b>O(n)</b>: Linear time (e.g., iterating through an array).</li>
+                <li><b>O(n log n)</b>: Log-linear time (e.g., merge sort).</li>
+                <li><b>O(n²)</b>: Quadratic time (e.g., bubble sort).</li>
+                <li><b>O(2ⁿ)</b> or higher: Exponential time (e.g., solving the traveling salesman problem).</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>3. Algorithm Design Principles</h2>
+            <ul>
+                <li><b>Divide and Conquer:</b> Break a problem into subproblems, solve them independently, and combine their results. Example: Merge Sort and Quick Sort.</li>
+                <li><b>Greedy Approach:</b> Make decisions based on the current best option. Example: Dijkstra’s Algorithm for the shortest path.</li>
+                <li><b>Dynamic Programming:</b> Solve problems by breaking them into overlapping subproblems and storing results to avoid redundant computations. Example: Fibonacci Sequence, Knapsack Problem.</li>
+                <li><b>Backtracking:</b> Explore all possible solutions and backtrack when an invalid solution is found. Example: Sudoku Solver, N-Queens Problem.</li>
+                <li><b>Brute Force:</b> Systematically try all possible solutions and select the best one. Example: Linear Search, string matching algorithm.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>4. Trees and Hierarchical Data Structures</h2>
+            <h3>Types of Trees</h3>
+            <ul>
+                <li><b>Binary Tree:</b> A tree where each node has at most two children.</li>
+                <li><b>Binary Search Tree (BST):</b> A binary tree with left and right subtrees ordered for efficient searching, insertion, and deletion.</li>
+                <li><b>AVL Tree:</b> A self-balancing binary search tree where the height difference between left and right subtrees is at most one. Time Complexity: O(log n).</li>
+                <li><b>Red-Black Tree:</b> A self-balancing binary search tree with relaxed balancing. Time Complexity: O(log n).</li>
+                <li><b>N-ary Tree:</b> A tree where each node can have at most N children.</li>
+                <li><b>Trie:</b> A tree used for storing strings where each node represents a common prefix. Used for operations like autocomplete.</li>
+                <li><b>Heap:</b> A complete binary tree where each node follows the heap property (Max-heap or Min-heap).</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>5. Array Query Algorithms</h2>
+            <p>Array query algorithms focus on efficiently answering questions or performing operations on data stored in an array. Examples include Sparse Tables, Fenwick Trees, Segment Trees, and Lookup Tables.</p>
+        </section>
+
+        <section class="section">
+            <h2>6. Trees vs Graphs</h2>
+            <p>Trees are a special type of graph with specific constraints (connected, acyclic, hierarchical structure) and are typically used to represent hierarchical data and optimize search operations. Graphs, on the other hand, are more general and flexible data structures used to represent complex relationships in various domains, including social networks, pathfinding, and network routing.</p>
+        </section>
+
+        <section class="section">
+            <h2>7. Sorting and Searching Algorithms</h2>
+            <h3>Sorting Algorithms</h3>
+            <ul>
+                <li>Bubble Sort</li>
+                <li>Merge Sort</li>
+                <li>Quick Sort</li>
+                <li>Selection Sort</li>
+                <li>Insertion Sort</li>
+                <li>Heap Sort</li>
+            </ul>
+
+            <h3>Searching Algorithms</h3>
+            <ul>
+                <li>Linear Search</li>
+                <li>Binary Search</li>
+                <li>Depth-First Search (DFS)</li>
+                <li>Breadth-First Search (BFS)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Algorithm Concepts. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
